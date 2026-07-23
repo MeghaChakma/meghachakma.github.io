@@ -95,9 +95,11 @@
       color: #38bdf8; 
     }
 
+    /* Fixed Layout: Prevents image from bouncing while typing */
     .firstSection {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 60px;
       margin: 40px 0;
       align-items: center;
       flex-wrap: wrap;
@@ -107,6 +109,13 @@
       font-size: 3rem;
       margin: 10px;
       z-index: 2;
+      width: 600px;
+      max-width: 100%;
+    }
+
+    /* Reserves height so wrapping text doesn't push elements around */
+    .leftSection div:last-child {
+      min-height: 100px;
     }
 
     .rightSection {
@@ -488,11 +497,7 @@
       <div class="card-image">
          <p>Interpreted engineering drawings and correlated them with on-site implementation and quality control.</p>
          <a href="https://meghachakma.github.io/MeghaChakma_THCBA_Certificate.jpg" target="_blank" class="cert-link">View Certificate ➔</a>
-      </div>.rightSection img {
-      width: 100%;
-      border-radius: 0;
-      box-shadow: none;
-    }
+      </div>
     </div>
 </div>
 
@@ -522,7 +527,7 @@
 
 <footer>
   <div class="footer-left" id="contact">
-    <p>&copy; 2025 Megha Chakma. All rights reserved.</p>
+    <p>&copy; 2026 Megha Chakma. All rights reserved.</p>
   </div>
 
   <div class="footer-right">
